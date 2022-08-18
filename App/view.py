@@ -111,7 +111,6 @@ while True:
         print("Total de libros cargados: " + str(books))
 
         # TODO: Modificaciones de Est-1 en el Lab 2
-        first = None
 
         # TODO: Modificaciones de Est-2 en el Lab 2
         last = None
