@@ -50,7 +50,7 @@ def printMenu():
     print("1- Cargar Libros")
     print("2- Cargar Tags")
     # TODO: Modificaciones de Est-1 en el Lab 2, agregar opcion 3
-    print("3- Cargar Book-tags")
+    print("3- Cargar tags de libros")
     print("0- Salir")
 
 
@@ -129,3 +129,5 @@ while True:
     else:
         sys.exit(0)
 sys.exit(0)
+#cambio jhaja
+#segundo cambio 
