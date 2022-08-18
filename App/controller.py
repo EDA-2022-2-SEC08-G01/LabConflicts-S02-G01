@@ -79,10 +79,10 @@ def loadBooksTags(control, filename):
     """
     # TODO: Modificación de Est-1 y Est-2, Est-3 en el Lab 2
     tf = os.path.join(cf.data_dir, filename)
-    input_file = csv.Dictreader(open(tf,enconding="utf-8"))
+    input_file = csv.DictReader(open(tf , enconding="utf-8"))
     control["model"] = model.createBookTagList(control["model"])
     for booktag in input_file:
-        model.addBooktag(control["model"],booktag)
+        model.addBooktag(control["model"], booktag)
     return model.bookTagsSize(control["Model"])
 
 def firstBook(control):
