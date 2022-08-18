@@ -85,6 +85,15 @@ def loadBooksTags(control, filename):
 
 
 
+=======
+    tf = os.path.join(cf.data_dir, filename)
+    input_file = csv.DictReader(open(tf , enconding="utf-8"))
+    control["model"] = model.createBookTagList(control["model"])
+    for booktag in input_file:
+        model.addBooktag(control["model"], booktag)
+    return model.bookTagsSize(control["Model"])
+>>>>>>> origin/Est--2
+
 def firstBook(control):
     """
     Devuelve el primer libro del catalogo
